@@ -15,8 +15,20 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        backgroundColor: Colors.black,
+        backgroundColor: Color(0xff154734),
         scaffoldBackgroundColor: Colors.black,
+        textTheme: TextTheme(bodyText1: TextStyle(color: Colors.white), // For default body text
+    bodyText2: TextStyle(color: Colors.white),  headline1: TextStyle(color: Colors.white),
+          headline2: TextStyle(color: Colors.white),
+          headline3: TextStyle(color: Colors.white),
+          headline4: TextStyle(color: Colors.white),
+          headline5: TextStyle(color: Colors.white),
+          headline6: TextStyle(color: Colors.white),
+          subtitle1: TextStyle(color: Colors.white),
+          subtitle2: TextStyle(color: Colors.white),
+          caption: TextStyle(color: Colors.white),
+          button: TextStyle(color: Colors.white),
+          overline: TextStyle(color: Colors.white),), // For secondary body text),
         appBarTheme:AppBarTheme(backgroundColor: Colors.black) ,
         // This is the theme of your application.
         //
@@ -33,7 +45,7 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
       home:  MainHomeScreen(),
