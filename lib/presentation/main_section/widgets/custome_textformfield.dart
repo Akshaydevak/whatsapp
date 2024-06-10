@@ -10,11 +10,13 @@ class customTextFormField extends StatefulWidget {
 
 class _customTextFormFieldState extends State<customTextFormField> {
   bool isTrue=false;
+  FocusNode focusNode=FocusNode();
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 45,
       child: TextFormField(
+        focusNode: focusNode,
         style: TextStyle(color: Colors.white),
         controller:widget. controller,
         onChanged: (aksha){
@@ -47,7 +49,8 @@ class _customTextFormFieldState extends State<customTextFormField> {
             },):null,
 
 
-            prefixIcon: Icon(Icons.search,color: Colors.grey.withOpacity(.5),),
+            prefixIcon:Icon(Icons.search,color: Colors.grey.withOpacity(.5),),
+            // prefix: Icon(Icons.add,color: Colors.grey.withOpacity(.5),),
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(40)),
             disabledBorder :OutlineInputBorder(
