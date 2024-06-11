@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whats_app/presentation/main_section/widgets/custome_textformfield.dart';
+import 'package:whats_app/presentation/updates/screens/upadation_main%20_screen.dart';
 
 import '../../core/colors.dart';
 import '../../core/const.dart';
@@ -11,7 +12,7 @@ class MainHomeScreen extends StatelessWidget {
 ValueNotifier <int> indexNotifier=ValueNotifier(0);
 final listOfScreen=[
   MainChatScreen(),
-  Center(child: Text("Updates"),),
+  updationMainScreen(),
   Center(child: Text("Communications"),),
   Center(child: Text("Calls"),),
 ];
