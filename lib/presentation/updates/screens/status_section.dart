@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:whats_app/core/const.dart';
 import 'package:whats_app/presentation/updates/widget/status_round_image.dart';
 
+import '../../../core/common/common_texts.dart';
+
 class StatusSection extends StatelessWidget {
   const StatusSection({super.key});
 
@@ -12,7 +14,7 @@ class StatusSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const    Text("Status",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),),
+          customBoldTex("Status"),
           SizedBox(height: 20,),
           Container(
             height: 88,
